@@ -9,6 +9,10 @@ aside, footer, header, nav, section, img {
     font-size: 100%;
 }
 
+body {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
 /*==========  Navigation  ==========*/
 
 /*==========  Header  ==========*/
@@ -42,10 +46,21 @@ aside, footer, header, nav, section, img {
     -ms-transition: transform .3s ease-in-out;
 }
 
+.modal-content {
+    position: relative;
+    background-color: #fff;
+}
+
+.modal-content img {
+    max-width: 932px;
+    max-height: 540px;
+    padding: 30px;
+    display: block;
+}
+
 .modal-close {
     position: absolute;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
     padding: 10px;
     cursor: pointer;
@@ -57,18 +72,6 @@ aside, footer, header, nav, section, img {
     transform: scale3d(1,1,1);
 }
 
-.modal-content {
-    margin: 10px;
-    background-color: #fff;
-}
-
-.modal-content img {
-    max-width: 900px;
-    max-height: 600px;
-    padding: 75px;
-    display: block;
-}
-
 /*==========  Footer  ==========*/
 
 /*==========  For Desktop First  ==========*/
@@ -78,39 +81,25 @@ aside, footer, header, nav, section, img {
 }
 
 @media only screen and (max-width : 992px) {
-
+    .modal-content img {
+        max-width: 708px;
+        max-height: 458px;
+    }
 }
 
 @media only screen and (max-width : 768px) {
-
+    .modal-content img {
+        max-width: 420px;
+    }
 }
 
 @media only screen and (max-width : 480px) {
-
+    .modal-content img {
+        max-width: 315px;
+        max-height: 346px;
+    }
 }
 
 @media only screen and (max-width : 320px) {
-
-}
-
-/*==========  For Mobile First  ==========*/
-
-@media only screen and (min-width : 320px) {
-
-}
-
-@media only screen and (min-width : 480px) {
-
-}
-
-@media only screen and (min-width : 768px) {
-
-}
-
-@media only screen and (min-width : 992px) {
-
-}
-
-@media only screen and (min-width : 1200px) {
 
 }
